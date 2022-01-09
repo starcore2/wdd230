@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&display=swap");
+
+:root
+{
+    --primary-color: #1C1B23;
+    --secondary-color: #4E4F5F;
+    --accent1-color: #5E6472;
+    --accent2-color: #ff0000;
+
+    --heading-font: font-family: 'Press Start 2P', cursive;
+    --paragraph-font: font-family: 'Source Code Pro', monospace;
+    --headline-color-on-white: black;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color:#95e67c; /* paragraph text on a colored background */ 
+  --paragraph-background-color: black;
+  --nav-link-color: #396E94;
+  --nav-background-color: #E7C24F;
+  --nav-hover-link-color: #E7C24F; /*Don't forget to change the nav colors to something If they don't work.*/
+  --nav-hover-background-color: #396E94;
+  
+}
