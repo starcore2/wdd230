@@ -44,7 +44,7 @@ html {
   p {
     font-family: var(--paragraph-font);
     color: #95e67c;
-    padding: 1em;
+    padding: 1em
   }
   ul{
     color: #95e67c;
@@ -94,7 +94,22 @@ html {
     justify-items: center;
     align-items: center;
     align-content: center;
+    border-radius: 2%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
 }
 .nameplate img {
     height: 200px;
+    border-radius: 2%;
+}
+main{
+    margin-bottom: 2em;
+}
+footer p{
+    margin-bottom: -2em;
+    text-align: center;
+}
+.assignement, .list{
+    text-align: center;
 }
