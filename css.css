@@ -12,7 +12,7 @@
     --heading-font: font-family: 'Press Start 2P', cursive;
     --paragraph-font: font-family: 'Source Code Pro', monospace;
     --headline-color-on-white: black;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --headline-color-on-color: #ff0000; /* headlines on a colored background */ 
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color:#95e67c; /* paragraph text on a colored background */ 
   --paragraph-background-color: black;
