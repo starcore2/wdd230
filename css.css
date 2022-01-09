@@ -20,5 +20,9 @@
   --nav-background-color: #E7C24F;
   --nav-hover-link-color: #E7C24F; /*Don't forget to change the nav colors to something If they don't work.*/
   --nav-hover-background-color: #396E94;
-  
+}
+#content{
+    max-width: 960px;
+    background-color: 	#4E4F5F;
+    margin: 0 auto;
 }
