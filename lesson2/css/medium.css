@@ -1,0 +1,19 @@
+main{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#lesson2-Section-One{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+#lesson2-Section-Two{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#lesson2-Section-Three{
+    grid-row-start: 2;
+    grid-template-columns: 1;
+    grid-column-end: 3;
+}

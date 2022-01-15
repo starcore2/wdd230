@@ -1,0 +1,74 @@
+/*
+    So uh standard I don't like white
+*/
+html{
+    background-color: silver;
+}
+img{
+    max-width: 200%;
+}
+footer{
+    margin: 0 auto;
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+/*     
+    #lesson2-Section-One
+    #lesson2-Section-Two
+    #lesson2-Section-Three
+*/
+
+#lesson2-Section-One{
+    grid-row-start: 1;
+}
+#lesson2-Section-Two{
+    grid-row-start: 2;
+}
+#lesson2-Section-Three{
+    grid-row-start: 3;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 642px) /*The reason for this spefic number is because if it was any smaller it would over lap. which is bad.*/{
+    @import url(medium.css); /* The import not working... Not sure what's wrong... so had to copy and paste*/  
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #lesson2-Section-One{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    #lesson2-Section-Two{
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    
+    #lesson2-Section-Three{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+  }
+  
+@media (min-width: 64em) {
+    @import url(large.css);   
+  }
