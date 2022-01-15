@@ -1,0 +1,16 @@
+main{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+#lesson2-Section-One{
+
+    grid-column-start: 1;
+}
+#lesson2-Section-Two{
+    grid-column-start: 2;
+}
+
+#lesson2-Section-Three{
+    grid-column-start: 3;
+
+}    

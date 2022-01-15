@@ -2,10 +2,10 @@
     So uh standard I don't like white
 */
 html{
-    background-color: silver;
+    background-color: white;
 }
 img{
-    max-width: 200%;
+    max-width: 100%;
 }
 footer{
     margin: 0 auto;
@@ -13,7 +13,8 @@ footer{
 main{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-
+    gap: 10px;
+    padding: 5px;
     margin: 0 auto;
     justify-content: center;
     align-content: center;
@@ -35,10 +36,21 @@ main{
 #lesson2-Section-Three{
     grid-row-start: 3;
 }
-
-
-
-
+#lesson2-Section-One, #lesson2-Section-Two, #lesson2-Section-Three{
+    background-color: silver;
+    border-radius: 10px;
+    text-align: center;
+}
+#lesson2-Section-One img, #lesson2-Section-Two img, #lesson2-Section-Three img{
+    margin-top: 5px;
+}
+#lesson2-Section-One h2, #lesson2-Section-Two h2, #lesson2-Section-Three h2{
+    background-color: rgba(49, 33, 194, 0.822);
+    color: white;
+    margin: auto auto auto auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 
 
@@ -65,10 +77,27 @@ main{
         grid-row-start: 2;
         grid-column-start: 1;
         grid-column-end: 3;
-    }
-    
-  }
+    }    
+}
   
 @media (min-width: 64em) {
-    @import url(large.css);   
-  }
+    @import url(large.css);
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #lesson2-Section-One{
+    
+        grid-column-start: 1;
+    }
+    #lesson2-Section-Two{
+        grid-column-start: 2;
+    }
+    
+    #lesson2-Section-Three{
+        grid-column-start: 3;
+        grid-row-start: 1;
+    
+    }    
+
+}
