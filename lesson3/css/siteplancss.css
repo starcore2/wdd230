@@ -1,0 +1,21 @@
+#red{
+    color: red;
+}
+#blue
+{
+    color: blue;
+}
+html{
+    background-color: silver;
+}
+#totalplancontent
+{
+
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: grey;
+
+}
+img{
+    max-width:100%;
+}
