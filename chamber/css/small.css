@@ -1,0 +1,18 @@
+header
+{
+    display: flex;
+    flex-direction: row;
+}
+html
+{
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+
+
+
+@media (min-width: 64em) {
+    @import url(large.css);
+}
