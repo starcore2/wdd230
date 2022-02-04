@@ -75,7 +75,7 @@ buttonchecking.addEventListener("click", function addFavorite() {
                     if(mur == w.textContent){
                         favorites.splice(i,1);
                     }
-                    i++
+                    i++ //I don't know how to make the code instantly end lol.
                 }
             }
             w.appendChild(deltethis)
