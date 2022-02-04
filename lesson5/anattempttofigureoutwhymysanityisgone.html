@@ -49,7 +49,7 @@
         listBtn.textContent = 'Delete';
         list.appendChild(listItem);
 
-        listBtn.onclick = function(e) {
+        listBtn.onclick = function(e /*I have learned the hard way that this automaticly changes the variable. Why*/) {
           list.removeChild(listItem);
         }
 
