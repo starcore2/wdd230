@@ -50,7 +50,7 @@
         list.appendChild(listItem);
 
         listBtn.onclick = function(e /*I have learned the hard way that this automaticly changes the variable. Why*/) {
-          list.removeChild(listItem);
+          list.removeChild(listItem); //It just works
         }
 
         input.focus();
