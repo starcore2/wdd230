@@ -1,7 +1,41 @@
 header
 {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 3fr;
+    grid-template-rows: 1fr .5fr .5fr;
+}
+header img
+{
+    grid-column: 1;
+}
+header h1
+{
+    grid-column: 3;
+    grid-row:1;
+}
+header nav
+{
+    grid-row: 2;
+    grid-column: 1/5 ;
+}
+header #banner{
+    grid-row: 3;
+    grid-column: 1/5;
+    background-color: gold;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+}
+#Weather{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: 10px;
+    background-color: skyblue;
+    
+
 }
 html
 {
@@ -11,6 +45,8 @@ html
 }
 img{
     max-width: 100%;
+    height: 100px;
+    margin-left: 10px;
 }
 body{
     margin: 0 auto;
@@ -25,13 +61,61 @@ footer{
 }
 
 
+nav ul li button{
+    background-color: rgb(85, 255, 255);
+    padding: 10px 20px;
+    width: 100%;
+    border-style: ridge;
+    border-color: rgb(51, 160, 160);
+}
+nav ul li button:hover{
+    background-color: rgb(4, 131, 204);
+}
+nav ul li{
+    list-style: none;
+    list-style-position: inside;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: -40px;
+    list-style-type: none;
+    gap: 1px;
+    }
+#Jtitle{
+    text-align: center;
+    text-justify: center;
+
+}
+#Jthanks{
+    margin-bottom: 50px;
+}
+#Jform{
+    background-color: grey;
+}
 @media (min-width: 540px) {
     @import url(medium.css);   
-    
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-left: -40px;
+        list-style-type: none;
+        }
   }
   
   @media (min-width: 64em) {
-    @import url(large.css);   
+      @import url(large.css); /*I don't know why import just won't work for me...*/
     
-  }
+      nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        margin-left: -40px;
+        list-style-type: none;
+        }
+
+    }
+
+
   

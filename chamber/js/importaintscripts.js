@@ -1,7 +1,11 @@
-var lastohmosa = document.lastModified;
+document.querySelector(
+	"#lastModified"
+).textContent = `Last Modification: ${document.lastModified}`;
 
-timetomod = document.querySelector('#datelast').textContent;
-
-timetomod = timetomod + lastohmosa;
-
-document.querySelector('#datelast').textContent = timetomod;
+const date = Date();
+let test = 1;
+if (date.getDay() == 1 || date.getDay() == 2 || test == 1)
+{
+    let banner = document.querySelector('#banner')
+    banner.setAttribute(display, "grid")
+}
