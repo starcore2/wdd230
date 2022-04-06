@@ -24,7 +24,13 @@ function buildCards(templeCard) {
         phonex.textContent = "Phone: "+phone;
         let history = overkill.history;
         let historyx = document.createElement('p');
-        historyx.textContent = "History: "+history;
+        historyx.textContent = "History: ";
+        splitHistory = history.split('\n')
+        for (const iterator of splitHistory) {
+            const baby = document.createElement("li")
+            baby.textContent=iterator
+            historyx.append(baby)     
+        }
         let img = overkill.img;
         let imgx = document.createElement('img');
         imgx.src = img;
@@ -32,6 +38,9 @@ function buildCards(templeCard) {
         let templeclose = overkill.templeClosureSchedule;
         let templeCloseX = document.createElement("ul");
         const templearray = templeclose.split('\n')
+        const note = document.createElement("h3");
+        note.textContent = "Days Temple are closed"
+        templeCloseX.append(note)
         for (const iterator of templearray) {
             const baby = document.createElement("li")
             baby.textContent=iterator
