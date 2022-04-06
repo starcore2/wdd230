@@ -18,7 +18,7 @@ function buildCards(templeCard) {
         nameX.textContent ="Adress: "+name;
         let adress = overkill.adress;
         let adressx = document.createElement('p');
-        adressx.textContent = adress;
+        adressx.textContent = "Address: "+adress;
         let phone = overkill.phone;
         let phonex = document.createElement('p');
         phonex.textContent = "Phone: "+phone;
@@ -30,9 +30,15 @@ function buildCards(templeCard) {
         imgx.src = img;
         imgx.alt = "A photo of " + name;
         let templeclose = overkill.templeClosureSchedule;
-        let templeCloseX = document.createElement("p");
-        templeCloseX.textContent=String(templeclose);
-        card.append(nameX, imgx,historyx, phonex, adressx, templeCloseX);
+        let templeCloseX = document.createElement("ul");
+        const templearray = templeclose.split('\n')
+        for (const iterator of templearray) {
+            const baby = document.createElement("li")
+            baby.textContent=iterator
+            templeCloseX.append(baby)
+            
+        }
+        card.append(nameX, imgx, historyx, phonex, adressx, templeCloseX);
         target.appendChild(card);
 
     }
