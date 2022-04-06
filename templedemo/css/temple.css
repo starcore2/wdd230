@@ -1,12 +1,24 @@
 #temples{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 50px;
+    gap: 25px;
     margin-bottom: 25px;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+#temples div img{
+    max-height: 500px;
 }
 #temples div{
     background-color: aliceblue;
     box-shadow: 3px 3px 3px 3px;
     padding: 10px;
+}
+@media(min-width: 64em){
+    #temples{
+
+
+        grid-template-columns: 1fr 1fr;
+    }
 }
