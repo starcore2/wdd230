@@ -1,0 +1,40 @@
+{
+    "temple": [
+        {
+            "name": "Oklahoma City Oklahoma Temple",
+            "adress": "12030 N Mustang Rd Yukon OK 73099-9801 United States",
+            "phone": "(1) 405-373-2309",
+            "history": "14 March 1999 Announced, 3 July 1999 Groundbreaking, 30 July 2000 Dedicated, 19 May 2019 Rededicated",
+            "templeClosureSchedule": "Monday, 20 June 2022 - Monday, 11 July 2022, Saturday, 1 October 2022 - Sunday, 2 October 2022, Wednesday, 23 November 2022 (Limited Operations), Wednesday, 23 November 2022 - Thursday, 24 November 2022, Monday, 28 November 2022 - Monday, 12 December 2022, Saturday, 24 December 2022 - Monday, 26 December 2022, Saturday, 31 December 2022",
+            "link": "https://www.churchofjesuschrist.org/temples/details/oklahoma-city-oklahoma-temple?lang=eng",
+            "img": "https://assets.ldscdn.org/19/0c/190cb95a6d85c2eceb1dd363b4b8e97639431be0/oklahoma_city_temple_exterior.jpeg"
+        },
+        {
+            "name": "Lubbock Texas Temple",
+            "adress": "7016 Frankford Ave Lubbock TX 79424 United States",
+            "phone": "(1) 806-794-0774",
+            "history": "3 April 2000 Announced, 4 November 2000 Groundbreaking, 21 April 2002 Dedicated",
+            "templeClosureSchedule": "Monday, 28 March 2022 - Monday, 11 April 2022, Monday, 26 September 2022 - Monday, 10 October 2022",
+            "link": "https://www.churchofjesuschrist.org/temples/details/lubbock-texas-temple?lang=eng",
+            "img": "https://assets.ldscdn.org/e2/d1/e2d192e2b4ecc6afcb6fdc1bd3bb6a7071be4712/lubbock_temple_lds.jpeg"
+        },
+        {
+            "name": "Louisville Kentucky Temple",
+            "adress": "7116 West Hwy 22 Crestwood KY 40014-9069 United States",
+            "phone": "(1) 502-241-4115",
+            "history": "17 March 1999 Announced, 29 May 1999 Groundbreaking, 19 March 2000 Dedicated",
+            "templeClosureSchedule":"Monday, 11 April 2022 - Monday, 25 April 2022, Saturday, 1 October 2022, Monday, 10 October 2022 - Monday, 24 October 2022, Wednesday, 23 November 2022 - Thursday, 24 November 2022 Saturday, 24 December 2022, Saturday, 31 December 2022",
+            "link":"https://www.churchofjesuschrist.org/temples/details/louisville-kentucky-temple?lang=eng",
+            "img": "https://assets.ldscdn.org/67/cf/67cf13533f4ee8c022829c2d4af30d193e7d3ddc/louisville_temple_lds.jpeg"
+        },
+        {
+            "name":"Anchorage Alaska Temple",
+            "adress":"13161 Brayton Dr Anchorage AK 99516 United States",
+            "phone":"(1) 907-348-7890",
+            "history":"4 October 1997 Announced, 17 April 1998 Groundbreaking, 9 January 1999 Dedicated, 8 February 2004Rededicated",
+            "templeClosureSchedule":"Monday, 30 May 2022, Monday, 4 July 2022, Monday, 5 September 2022, Monday, 19 September 2022 - Friday, 30 September 2022, Saturday, 1 October 2022 - Sunday, 2 October 2022, Thursday, 24 November 2022, Saturday, 24 December 2022 - Sunday, 25 December 2022, Saturday, 31 December 2022 - Sunday, 1 January 2023",
+            "link":"https://www.churchofjesuschrist.org/temples/details/anchorage-alaska-temple?lang=eng",
+            "img":"https://assets.ldscdn.org/ef/0d/ef0d46c745925e4dc2ee72d690b0efc12f9dbfc1/anchorage_alaska_temple_lds.jpeg"
+        }
+    ]
+}

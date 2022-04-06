@@ -13,6 +13,8 @@ header nav ul{
     gap: 10px;
     padding: 10px;
     margin-top: auto;
+    text-align: center;
+    text-justify: center;
 }
 body{
     max-width: 960px;
@@ -26,12 +28,42 @@ header, main{
 }
 footer{
     background-color: rgb(213, 230, 236);
+    display: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     align-content: center;
     justify-items: center;
+}
+#lastmod{
+    grid-column: 1/4;
+    grid-row: 4;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+#location{
+    grid-column: 1/4;
+    grid-row: 1;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+#contact{
+    grid-column: 1/4;
+    grid-row: 2;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+#social{
+    grid-column: 1/4;
+    grid-row: 3;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
 @media(min-width: 32em)
     {
@@ -40,8 +72,29 @@ footer{
             grid-template-rows: 1fr;
         }
         header nav ul{
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
+        }
+        footer{
+            display:none;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        #location{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #social{
+            grid-column: 3;
+            grid-row: 1;
+        } 
+        #contact{
+            grid-column: 2;
+            grid-row: 1;
+        }
+        #lastmod{
+            grid-row:2;
         }
     }
     @media(min-width: 64em){

@@ -1,0 +1,26 @@
+#banner{
+    background-color: lightcoral;
+    text-align: center;
+    padding: 10px
+}
+header
+{
+    grid-template-rows: 1fr auto;
+}
+#warning{
+    grid-column: 1/3;
+    background-color: red;
+    display: none;
+}
+#templeOfChoice{
+    background-color: grey;
+    box-shadow: 1px 1px 1px 1px; 
+}
+#weather{
+    background-color: antiquewhite;
+    max-width: 200px;
+    text-align: right;
+    border: 1px solid;
+    box-shadow: 1px 1px 1px 1px; 
+}
+

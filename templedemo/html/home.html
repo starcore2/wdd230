@@ -2,49 +2,75 @@
 <!DOCTYPE html5>
 
 <head>
-    <title>Temple And Suites</title>
+    <title>Temple And Suites Home Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=Yes" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../gloabalCSS/normalize.css">
     <link rel="stylesheet" href="../css/small.css">
-    
-</head>
-<body>
-<header>
-    <img id="logo" src="../images/logo.png">
-    <nav>
-        <ul>
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="temple.html">Rate a Temple</a>
-            </li>
-            <li>
-                <a href="reservation.html">Make A Reservation</a>
-            </li>
-            <li>
-                <a href='services.html'>Current Services</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <!--Call to action here-->
-    <div id="banner"></div>
-    <!--Info on nav and hotel chain-->
-    <!--Weather-->
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../scripts/home.js"></script>
 
-</main>
-<footer>
-    <a id="location"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028554!2d-77.09772048440504!3d38.98325594948324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1649197454974!5m2!1sen!2sus"
-            width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></a>
-    <a id="contact" href="contact.html">Contact us</a>
-    <div id="social">We are on <a href="https://twitter.com/">Twitter</a> and <a
-            href="https://www.facebook.com/">Facebook</a></div>
-</footer>
+</head>
+
+<body>
+    <header>
+        <div id="warning"><h1>Warning: </h1> <button onclick="closeWarn()">X</button></div>
+        <script>
+            function closeWarn(){
+                document.querySelector('#warning').remove();
+                
+            }
+        </script>
+        <img id="logo" src="../images/logo.png" alt="TempleAndSuiteLogo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="temple.html">Rate a Temple</a>
+                </li>
+                <li>
+                    <a href="reservation.html">Make A Reservation</a>
+                </li>
+                <li>
+                    <a href='services.html'>Current Services</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Call to action here-->
+        <div id="banner">
+            <h1><a href='reservation.html'>Make a Reservation</a></h1>
+        </div>
+        <!--Info on nav and hotel chain-->
+        <div id="templeOfChoice">
+            <h2 id="templeName">MissingInfo</h2>
+            <img id="templeIMG" alt="Invalid IMG" src="">
+            <h3 id="located">unkown location</h3>
+            <h3 id="contact">ContactInfoMissing</h3>
+            <h3 id="history">ServiceInfoGone</h3>
+            <h3 id="closingTime">TimelineGone</h3>
+        </div>
+        <!--Weather-->
+        <div id="weather">
+            <h3 id="Location">Unknown</h3>
+            <p id="temp">Tempature: <a id="tempSelect">N/A</a></p>
+            <p id="disc">Discription of condition: <a id="discSelect">N/A</a></p>
+            <p id="humi">Humidity: <a id='humiSelect'>N/A</a></p>
+        </div>
+    </main>
+    <footer>
+        <a id="location"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028554!2d-77.09772048440504!3d38.98325594948324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1649197454974!5m2!1sen!2sus"
+                width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+        <a id="contact" href="contact.html">Contact us</a>
+        <div id="social">We are on <a href="https://twitter.com/">Twitter</a> and <a
+                href="https://www.facebook.com/">Facebook</a></div>
+        <div id="lastmod">last modified on <a id="dateofmod"></a></div>
+    </footer>
 </body>
