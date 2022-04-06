@@ -31,7 +31,7 @@ function buildCards(templeCard) {
         imgx.alt = "A photo of " + name;
         let templeclose = overkill.templeClosureSchedule;
         let templeCloseX = document.createElement("p");
-        templeCloseX.textContent=templeclose;
+        templeCloseX.textContent=String(templeclose);
         card.append(nameX, imgx,historyx, phonex, adressx, templeCloseX);
         target.appendChild(card);
 
