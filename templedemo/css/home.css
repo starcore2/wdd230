@@ -15,6 +15,13 @@ header
 #templeOfChoice{
     background-color: grey;
     box-shadow: 1px 1px 1px 1px; 
+    max-width: fit-content;
+    display: inline-block;
+    padding: 5px;
+}
+#templeIMG
+{
+    max-height: 150px;
 }
 #weather{
     background-color: antiquewhite;
@@ -22,5 +29,8 @@ header
     text-align: right;
     border: 1px solid;
     box-shadow: 1px 1px 1px 1px; 
+    display: inline-block;
+    margin-left: auto;
+    padding: 5px;
 }
 
