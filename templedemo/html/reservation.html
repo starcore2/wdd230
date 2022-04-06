@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../../gloabalCSS/normalize.css">
     <link rel="stylesheet" href="../css/small.css">
+    <link rel="stylesheet" href="../css/forum.css">
+
 </head>
 <body>
 <header>
@@ -31,22 +33,82 @@
     </nav>
 </header>
 <main>
-    <form action="">
-        <!--The Reservation page contains a form that collects relevant information when making a normal stay reservation including the 
-            location, 
-            date, 
-            number and type of rooms, 
-            registrant's full name, 
-            email, 
-            phone, 
-            home state or country, 
-            and special accommodations/comments. 
-            Make sure to do some form validation.-->
-        <label for="Name">
-            Testing
-        </label>
-        <input id="Name" type="text">
-        <button>Submit</button>
+    <form action="" id="reservation">
+        <h2>Fill out this form to send the info to us so we can help you identfy the best hotel chain to use</h2>
+        <h3>Warning this site will not support people outside of the USA</h3>
+        <!--The Reservation page contains a form that collects relevant information when making a normal stay reservation including the -->
+        <!--location,-->
+        <div id="location">
+        <p>Which temple are you looking for<a class="requiredstar">*</a></p>
+        <ul>
+        <li><label for="okTemple">Oklahoma City Oklahoma Temple</label>
+        <input type="radio" id="okTemple" name="templeTargetLocation" value="Oklahoma City Oklahoma Temple" required></li>
+        <li><label for="texatemple">Lubbock Texas Temple</label>
+        <input type="radio" id="texatemple" name="templeTargetLocation" value="Lubbock Texas Temple"></li>
+        <li><label for="kentTemple">Louisville Kentucky Temple</label>
+        <input type="radio" id="kentTemple" name="templeTargetLocation" value="Louisville Kentucky Temple"></li>
+        <li><label for="">Anchorage Alaska Temple</label>
+        <input type="radio" id="akTemple" name="templeTargetLocation" value="Anchorage Alaska Temple"></li>
+    </ul>
+</div>
+        <!--date,-->
+        <div id="datesection">
+        <label for="date">Please pick a start date with how long you want to stay up to 7 days.<a class="requiredstar">*</a></label>
+        <input type="date" id="startDate" required name="Date">
+        <input type="number" name ='Date'required min="1" max="7" placeholder="0">
+    </div>
+        <!--number and type of rooms,-->
+        
+        <!--registrant's full name,-->
+        <div id="namesection">
+        <label for="FirstName">Enter your First name<a class="requiredstar">*</a></label><input required type="text" pattern="[A-Za-z]*">
+        <div></div>
+        <label for="Middle Name">Enter your Middle name</label><input type="text" pattern="[A-Za-z]*">
+        <div>
+        </div>
+        <label for="LastName">Enter your Last name<a class="requiredstar">*</a></label><input required type="text" pattern="[A-Za-z]*">
+        
+    </div>
+
+        <!--email,-->
+        <div id="emails">
+            <label for="email">Enter your email<a class="requiredstar">*</a>
+                <input required type="email" name="email" placeholder="example@example.com">
+            </label>
+            <a>Hint: example@mail.com </a>
+        </div>
+
+        <!--phone,-->
+        <div id="phones">
+            <label>Enter your phone number in the format (123) - 456 - 7890
+                 (<input required name="tel1" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit area code" size="2"/>) -
+                  <input required name="tel2" type="tel" pattern="[0-9]{3}" placeholder="###" aria-label="3-digit prefix" size="2"/> -
+                  <input required name="tel3" type="tel" pattern="[0-9]{4}" placeholder="####" aria-label="4-digit number" size="3"/>
+                </label>
+>
+               
+        </div>
+        <!--home state or country,-->
+        <div id="enterHome">
+            <label for="home">
+                Enter the intizals of your state in all caps<a class="requiredstar">*</a>
+            </label>
+            <input placeholder="AL" type="text" name="homeState" id="homstate" required pattern="AL|KY|OH|AK|LA|OK|AZ|ME|OR|AR|MD|PA|AS|MA|PR|CA|MI|RI|CO|MN|SC|CT|MS|SD|DE|MO|TN|DC|MT|TX|FL|NE|TT|GA|NV|UT|GU|NH|VT|HI|NJ|VA|ID|NM|VI|IL|NY|WA|IN|NC|WV|IA|ND|WI|KS|CM|WY">
+
+        </div>
+        <!--and special accommodations/comments.-->
+        <div id="bonus">
+            <label for="extra">
+                Anything importaint you need us to know? (max character count of 500)
+            </label>
+            <input type="text" max="500">
+            
+        </div>
+        <!--Make sure to do some form validation.-->
+        
+        <button form="reservation" type="submit" onclick="sucess()">Submit</button>
+        <p>Note: <a class="requiredstar">*</a> means the option is required</p>
+        <div id="sucess"><h1>Thank you for filling out our form</h1></div>
     </form>
 </main>
 <footer>
@@ -60,3 +122,4 @@
             <div id="lastmod">last modified on <a id="dateofmod"></a></div>
 </footer>
 </body>
+<script src="../scripts/form.js"></script>

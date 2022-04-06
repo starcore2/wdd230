@@ -1,0 +1,23 @@
+.requiredstar{
+    color: red;
+    
+}
+form{
+    background-color: beige;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    display: block;
+        
+}
+input:invalid{
+    border-color: red;
+}
+#namesection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr;
+}
+#sucess{
+    display: none;
+}
